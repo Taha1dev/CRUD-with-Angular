@@ -1,0 +1,19 @@
+{
+  "users": [
+    { "id": 1, "name": "John" },
+    { "id": 2, "name": "Jane" }
+  ],
+
+  "employees": {
+    "id": 1,
+    "firstName": "Brinn",
+    "lastName": "Jephcote",
+    "email": "bjephcote0@archive.org",
+    "dob": "1981-10-05T12:09:39Z",
+    "gender": "Female",
+    "education": "Graduate",
+    "company": "Gabspot",
+    "experience": 36,
+    "package": 37
+  }
+}
