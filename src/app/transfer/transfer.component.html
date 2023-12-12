@@ -1,0 +1,37 @@
+<div
+  dir="rtl"
+  class="relative flex justify-center items-center container mx-auto rounded-lg shadow-lg bg-white"
+>
+  <!-- divider -->
+
+  <div class="p-10">
+    <form class="flex items-start flex-col gap-4 justify-center">
+      <div class="max-w-sm">
+        <h1 class="text-xl font-bold my-2">هل أنت متأكد من تحويل الشكوى؟</h1>
+        <p
+          class="text-lg text-red-500 border-2 border-transparent border-b-red-600"
+        >
+          نود إعلامك انه سيتم تنبيه رئيس قسمك
+        </p>
+      </div>
+      <div
+        mat-dialog-actions
+        class="action flex justify-center gap-2 mx-20 w-full"
+      >
+        <button
+          class="bg-primary px-4 py-2 text-white rounded-md flex-1"
+          type="submit"
+          [mat-dialog-close]="false"
+        >
+          نعم</button
+        ><button
+          type="button"
+          class="bg-secondary px-4 py-2 text-white rounded-md flex-1"
+          [mat-dialog-close]="false"
+        >
+          إلغاء
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

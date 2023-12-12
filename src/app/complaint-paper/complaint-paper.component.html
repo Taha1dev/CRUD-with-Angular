@@ -1,0 +1,49 @@
+<div class="flex items-center justify-center p-10">
+  <div
+    dir="rtl"
+    class="relative flex flex-col container mx-auto rounded-lg shadow-xl bg-gray-200 p-10"
+  >
+    <div
+      class="absolute font-bold text-2xl text-white bg-primary flex items-center justify-center rounded-md rounded-b-none rounded-tr-none border-2 border-primary p-5 top-0 left-0 w-6 h-6"
+    >
+      5
+    </div>
+    <h1
+      class="my-5 font-bold text-2xl border-2 border-transparent border-b-primary w-fit"
+    >
+      نص الشكوى:
+    </h1>
+    <p class="p-5 border-2 text-justify border-dashed border-primary text-xl">
+      نص الشكوى نص الشكوى نص الشكوى نص الشكوى نص الشكوى نص الشكوى نص الشكوى نص
+      الشكوى
+    </p>
+    <div class="my-5">
+      <form class="w-full">
+        <mat-form-field appearance="fill" class="w-full">
+          <textarea
+            matInput
+            placeholder="إضافة رد"
+            name="responseMessage"
+            id="responseMessage"
+            rows="10"
+          ></textarea>
+        </mat-form-field>
+      </form>
+    </div>
+    <div mat-dialog-actions class="flex gap-2 justify-center w-full">
+      <button
+        class="bg-primary px-4 py-2 text-white rounded-md flex-1"
+        type="submit"
+        [mat-dialog-close]="false"
+      >
+        رد</button
+      ><button
+        type="button"
+        class="bg-red-500 px-4 py-2 text-white rounded-md flex-1"
+        [mat-dialog-close]="false"
+      >
+        إلغاء
+      </button>
+    </div>
+  </div>
+</div>

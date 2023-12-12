@@ -1,0 +1,44 @@
+<div dir="rtl" class="w-96 p-10 flex items-center justify-center">
+  <form (ngSubmit)="handleFormSubmit()" class="flex flex-col space-y-4 w-full">
+    <div class="flex flex-col">
+      <label for="نص الشكوى" class="text-lg font-medium">نص الشكوى</label>
+      <input
+        type="text"
+        id="نص الشكوى"
+        name="نص الشكوى"
+        [(ngModel)]="data.property1"
+        class="border-gray-500 rounded-md p-2 border-2 border-transparent focus:outline-none focus:border-emerald-500"
+        placeholder="أدخل نص الشكوى"
+      />
+    </div>
+
+    <div class="flex flex-col">
+      <label for="عنوان الشكوى" class="text-lg font-medium">عنوان الشكوى</label>
+      <input
+        type="text"
+        id="عنوان الشكوى"
+        name="عنوان الشكوى"
+        [(ngModel)]="data.property2"
+        class="border-gray-500 rounded-md p-2 border-2 border-transparent focus:outline-none focus:border-emerald-500"
+        placeholder="أدخل عنوان الشكوى"
+      />
+    </div>
+    <div
+      mat-dialog-actions
+      class="action flex justify-center gap-2 mx-20 w-full"
+    >
+      <button
+        class="bg-emerald-500 px-4 py-2 text-white rounded-md flex-1"
+        type="submit"
+      >
+        نعم</button
+      ><button
+        type="button"
+        class="bg-red-500 px-4 py-2 text-white rounded-md flex-1"
+        [mat-dialog-close]="false"
+      >
+        إلغاء
+      </button>
+    </div>
+  </form>
+</div>

@@ -1,138 +1,6 @@
 {
   "employees": [
     {
-      "id": 1,
-      "firstName": "Brinn",
-      "lastName": "Jephcote",
-      "email": "bjephcote0@archive.org",
-      "dob": "1981-10-05T12:09:39Z",
-      "gender": "Female",
-      "education": "Graduate",
-      "company": "Gabspot",
-      "experience": 36,
-      "package": 37
-    },
-    {
-      "id": 2,
-      "firstName": "Kenneth",
-      "lastName": "MacElholm",
-      "email": "kmacelholm1@sina.com.cn",
-      "dob": "1991-09-12T22:14:02Z",
-      "gender": "Male",
-      "education": "Matric",
-      "company": "Agivu",
-      "experience": 75,
-      "package": 17
-    },
-    {
-      "id": 3,
-      "firstName": "Kimmy",
-      "lastName": "Penniall",
-      "email": "kpenniall2@biblegateway.com",
-      "dob": "1980-05-19T08:23:30Z",
-      "gender": "Female",
-      "education": "Graduate",
-      "company": "Mycat",
-      "experience": 45,
-      "package": 17
-    },
-    {
-      "firstName": "Amity",
-      "lastName": "Guillard",
-      "email": "aguillard3@blogspot.com",
-      "dob": "1992-04-28T23:34:29Z",
-      "gender": "others",
-      "education": "Graduate",
-      "company": "Youopia",
-      "experience": 10,
-      "package": 16,
-      "id": 4
-    },
-    {
-      "firstName": "Munmro",
-      "lastName": "Wrangle",
-      "email": "mwrangle4@network.org",
-      "dob": "2002-06-04T05:11:37Z",
-      "gender": "Male",
-      "education": "Post Graduate",
-      "company": "Jaxworks",
-      "experience": 63,
-      "package": 9,
-      "id": 5
-    },
-    {
-      "id": 6,
-      "firstName": "Hunter",
-      "lastName": "Lammenga",
-      "email": "hlammenga5@studiopress.com",
-      "dob": "1990-01-18T09:36:59Z",
-      "gender": "Male",
-      "education": "Intermediate",
-      "company": "Wordpedia",
-      "experience": 94,
-      "package": 20
-    },
-    {
-      "id": 7,
-      "firstName": "Dot",
-      "lastName": "Staterfield",
-      "email": "dstaterfield6@icq.com",
-      "dob": "1983-12-25T00:37:36Z",
-      "gender": "Female",
-      "education": "Post Graduate",
-      "company": "Riffpath",
-      "experience": 10,
-      "package": 16
-    },
-    {
-      "id": 8,
-      "firstName": "Monika",
-      "lastName": "Noni",
-      "email": "mnoni7@eventbrite.com",
-      "dob": "1985-06-11T00:30:28Z",
-      "gender": "Female",
-      "education": "Matric",
-      "company": "Skinte",
-      "experience": 9,
-      "package": 32
-    },
-    {
-      "id": 9,
-      "firstName": "Ganny",
-      "lastName": "Cammacke",
-      "email": "gcammacke8@pbs.org",
-      "dob": "1997-01-01T21:36:29Z",
-      "gender": "Male",
-      "education": "Diploma",
-      "company": "Demizz",
-      "experience": 30,
-      "package": 28
-    },
-    {
-      "id": 10,
-      "firstName": "William",
-      "lastName": "Farnish",
-      "email": "wfarnish9@163.com",
-      "dob": "1991-11-18T19:37:05Z",
-      "gender": "Male",
-      "education": "Matric",
-      "company": "Teklist",
-      "experience": 6,
-      "package": 18
-    },
-    {
-      "id": 11,
-      "firstName": "Tim",
-      "lastName": "Triggs",
-      "email": "ttriggsa@statcounter.com",
-      "dob": "1993-12-13T20:31:34Z",
-      "gender": "Male",
-      "education": "Matric",
-      "company": "Tagpad",
-      "experience": 11,
-      "package": 33
-    },
-    {
       "id": 12,
       "firstName": "Ambrose",
       "lastName": "Khomishin",
@@ -460,7 +328,7 @@
       "id": 39,
       "firstName": "Bab",
       "lastName": "Toothill",
-      "email": "btoothill12@creativecommons.org",
+      "email": "btoothill12@creas.org",
       "dob": "1993-01-02T15:33:01Z",
       "gender": "Female",
       "education": "Post Graduate",
@@ -2403,14 +2271,14 @@
     {
       "firstName": "Taha",
       "lastName": "Mulla",
-      "email": "sa@gmail.com",
-      "dob": "2023-10-12T07:00:00.000Z",
-      "gender": "female",
+      "email": "taha@s.com",
+      "dob": "2023-10-10T07:00:00.000Z",
+      "gender": "male",
       "education": "Diploma",
-      "company": "ss",
-      "experience": 3,
-      "package": 12,
-      "id": 201
+      "company": "injaz",
+      "experience": 2,
+      "package": 200,
+      "id": 202
     }
   ]
 }

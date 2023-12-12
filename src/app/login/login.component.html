@@ -1,0 +1,24 @@
+<div
+  dir="rtl"
+  class="flex flex-col container mx-auto mt-16 shadow-lg w-1/2 items-center justify-center"
+>
+  <div class="shadow-lg w-full items-center justify-center bg-gray-200 p-5">
+    <div class="flex flex-col justify-center items-center">
+      <h1 class="text-2xl font-bold mb-4 text-gray-700">
+        مركز خدمة المواطن - الشكاوى
+      </h1>
+      <img src="/assets/icon.png" alt="logo" width="80" height="80" />
+    </div>
+    <form (submit)="handleFormSubmit()" class="p-5 flex flex-col items-center">
+      <mat-form-field appearance="fill" class="w-full">
+        <input autocomplete matInput placeholder="اسم المستخدم" />
+      </mat-form-field>
+      <mat-form-field appearance="fill" class="w-full">
+        <input matInput placeholder="كلمة المرور" type="password" />
+      </mat-form-field>
+      <button mat-raised-button color="primary" class="w-fit mt-4 px-4 py-2">
+        تسجيل الدخول
+      </button>
+    </form>
+  </div>
+</div>

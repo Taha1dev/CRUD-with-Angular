@@ -1,0 +1,48 @@
+<div dir="rtl" class="m-5 gap-4 flex justify-evenly flex-wrap">
+  <div
+    *ngIf="GroupComplaint.length == 0"
+    class="flex justify-center items-center bg-red-500"
+  >
+    <h1 class="text-4xl p-20 font-extrabold text-white">
+       لا يوجد أي شكاوى غير مسندة
+    </h1>
+  </div>
+  <div
+    *ngFor="let complaint of GroupComplaint"
+    class="relative parent rounded-md transition-all z-10 flex flex-col bg-gray-200 p-2 m-2 w-fit shadow-lg pt-5"
+  >
+    <div class="flex justify-between items-center">
+      <h3 class="text-2xl font-bold">
+        {{ complaint.result || "قيد المعالجة" }}
+      </h3>
+      <img width="40" height="40" src="/assets/icon.png" alt="logo" />
+    </div>
+    <div class="flex my-2">
+      <h1 class="px-2 py-1">رقم الشكوى:</h1>
+      <p class="bg-blue-100 px-2 py-1 text-primary rounded-md font-bold">
+        {{ complaint.name }}
+      </p>
+      <h1 class="px-2 py-1">الحالة :</h1>
+      <p class="bg-green-100 px-2 py-1 text-green-700 rounded-md">
+        {{ complaint.taskKey }}
+      </p>
+    </div>
+    <div class="my-2">
+      <hr />
+    </div>
+    <!-- <div class="flex flex-col items-start">
+  <h1 class="text-xl font-semibold">{{ complaint.data["نص الشكوى"] }}</h1>
+  <p class="max-w-sm">
+    {{ complaint.data["عنوان الشكوى"] }}
+  </p>
+</div> -->
+    <div class="flex w-full items-center justify-center p-2">
+      <button
+        class="px-9 py-2 bg-primary text-white w-full text-lg rounded-md"
+        (click)="assign(complaint.id, complaint.taskKey)"
+      >
+        استلام
+      </button>
+    </div>
+  </div>
+</div>

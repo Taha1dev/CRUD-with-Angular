@@ -1,0 +1,19 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+th,
+th * {
+  font-weight: bold;
+}
+.main-body {
+  padding-top: 20px;
+  margin: 0 auto;
+  max-width: 1348px;
+  mat-form-field {
+    width: 100%;
+  }
+}
+
+#nonePadding {
+  padding: 10px;
+}

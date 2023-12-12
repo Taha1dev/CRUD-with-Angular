@@ -1,0 +1,35 @@
+<div dir="rtl" class="flex gap-1 container mx-auto">
+  <mat-card class="flex flex-col w-96">
+    <div class="bg-gray-200 p-5">
+      <div class="my-2">
+        <mat-card-header>
+          <mat-card-title>
+            <h1 class="font-bold text-gray-700">تأكيد عملية التحويل</h1>
+          </mat-card-title>
+        </mat-card-header>
+      </div>
+      <div class="my-2">
+        <mat-card-content>
+          <mat-form-field class="w-full">
+            <mat-label>اختر جهة التحويل</mat-label>
+            <mat-select>
+              <mat-option value="option1">الإتصالات</mat-option>
+              <mat-option value="option2">إنجاز تيك</mat-option>
+              <mat-option value="option3">الخارجية</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </mat-card-content>
+      </div>
+      <mat-card-actions mat-dialog-actions>
+        <div class="flex gap-2">
+          <button [mat-dialog-close]="false" mat-raised-button color="warn">
+            تأكيد التحويل
+          </button>
+          <button [mat-dialog-close]="false" mat-raised-button color="primary">
+            رفض
+          </button>
+        </div>
+      </mat-card-actions>
+    </div>
+  </mat-card>
+</div>

@@ -1,0 +1,113 @@
+<form
+  dir="rtl"
+  class="w-96 p-10 flex items-center justify-center flex-col"
+  #complaintform="ngForm"
+  name="complaintform"
+  [formGroup]="form"
+  (ngSubmit)="submit()"
+>
+  <div *ngFor="let control of active; let i = index">
+    <div [ngSwitch]="control.type">
+      <mat-form-field
+        *ngSwitchCase="'TEXT'"
+        appearance="fill"
+        class="form-field"
+      >
+        <mat-label>{{ control.name }}</mat-label>
+        <input
+          matInput
+          [placeholder]="control.paramName"
+          [formControlName]="control.paramName"
+        />
+        <mat-error
+          *ngIf="form.get(control.paramName)?.hasError('RequiredValidator')"
+          class="error-message"
+        >
+          Error
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field
+        *ngSwitchCase="'number'"
+        appearance="outline"
+        class="form-field"
+      >
+        <mat-label>{{ control.paramName }}</mat-label>
+        <input
+          type="number"
+          matInput
+          [placeholder]="control.paramName"
+          [formControlName]="control.paramName + ''"
+        />
+      </mat-form-field>
+      <mat-form-field
+        *ngSwitchCase="'Date'"
+        appearance="outline"
+        class="form-field"
+      >
+        <mat-label>{{ control.paramName }}</mat-label>
+        <input
+          matInput
+          [matDatepicker]="picker"
+          [id]="control.paramName"
+          [formControlName]="control.paramName"
+        />
+
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field
+        *ngSwitchCase="'COMBOBOX'"
+        appearance="outline"
+        class="form-field"
+      >
+        <mat-label>{{ control.name }}</mat-label>
+        <mat-select [formControlName]="control.paramName">
+          <mat-option>
+            <ngx-mat-select-search
+              placeholderLabel="بحث ..."
+              noEntriesFoundLabel="لايوجد نتائج مطابقة"
+              [formControl]="dynamicFilterCtrl"
+            ></ngx-mat-select-search>
+          </mat-option>
+          <mat-option
+            *ngFor="let entry of filteredEntries"
+            [value]="entry.value"
+          >
+            {{ entry.name }}
+          </mat-option>
+        </mat-select>
+        <mat-error
+          *ngIf="form.get(control.paramName)?.hasError('RequiredValidator')"
+          class="error-message"
+        >
+          Error
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field *ngSwitchCase="'File'" class="form-field">
+        <ngx-mat-file-input
+          [formControlName]="control.paramName"
+          placeholder="control.paramName"
+        ></ngx-mat-file-input>
+        <mat-icon matSuffix>folder</mat-icon>
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="flex gap-3">
+    <button
+      type="submit"
+      class="bg-emerald-500 px-4 py-2 text-white rounded"
+    >
+      إضافة
+    </button>
+    <button
+      class="bg-red-500 px-4 py-2 text-white rounded"
+      type="submit"
+      [mat-dialog-close]="false"
+    >
+      إلغاء
+    </button>
+  </div>
+</form>
